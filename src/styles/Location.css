@@ -1,0 +1,24 @@
+.location {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.location--details,
+.location--weather {
+  width: 48%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.location--weather {
+  text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+  .location--details,
+  .location--weather {
+    width: 100%;
+  }
+}
