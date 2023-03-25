@@ -19,4 +19,27 @@ function getDay(unix) {
   return dayOfWeek;
 }
 
-export { kelvinToCelsius, timeConvert, getDay };
+function dateFromTime(time) {
+  const date = new Date(time * 1000);
+  const day = date.getDate();
+  const month = date.getMonth() + 1;
+  const formattedDate = `${String(day).padStart(2, "0")}/${String(
+    month
+  ).padStart(2, "0")}`;
+  return formattedDate;
+}
+
+function longDateFromTime(time) {
+  const d = new Date(time * 1000);
+  const options = {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  };
+  return d
+    .toLocaleDateString("en-US", options)
+    .replace(/(\d)(st|nd|rd|th)/, "$1<span>$2</span>");
+}
+
+export { kelvinToCelsius, timeConvert, getDay, dateFromTime, longDateFromTime };

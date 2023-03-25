@@ -1,5 +1,5 @@
 import React from "react";
-import { getDay } from "./DataFunction";
+import { getDay, dateFromTime } from "./DataFunction";
 
 export default function Forecast(props) {
   const { data } = props;
@@ -8,7 +8,7 @@ export default function Forecast(props) {
     <div className="card--forecast">
       <div className="card--daydate">
         <p>{getDay(data.date)}</p>
-        <p>date</p>
+        <p>{dateFromTime(data.date)}</p>
       </div>
       <p>{data.description}</p>
       <div className="card--temp">
