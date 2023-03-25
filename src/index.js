@@ -5,11 +5,14 @@ import App from "./components/App";
 import Location from "./components/Location";
 import "./styles/Location.css";
 import location from "./data/openweather.json";
+import Card from "./components/Card";
+import "./styles/Card.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
     <Location location={location} />
+    <Card />
   </React.StrictMode>
 );

@@ -1,0 +1,29 @@
+.card--forecast {
+  width: 20vw;
+  max-width: 300px;
+  text-align: center;
+}
+
+.cards * {
+  border: 1px red solid;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 550px) {
+  .card--forecast {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    justify-content: space-between;
+    max-height: 80px;
+  }
+  .cards {
+    margin: 0 auto;
+    width: 90vw;
+    display: block;
+  }
+}

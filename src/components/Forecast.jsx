@@ -1,12 +1,20 @@
 import React from "react";
+import { getDay } from "./DataFunction";
 
 export default function Forecast(props) {
-  console.log(props);
+  const { data } = props;
+  console.log(data);
   return (
-    <div className="forecast">
-      <p>day</p>
-      <h4>temp</h4>
-      <h5>temp low</h5>
+    <div className="card--forecast">
+      <div className="card--daydate">
+        <p>{getDay(data.date)}</p>
+        <p>date</p>
+      </div>
+      <p>{data.description}</p>
+      <div className="card--temp">
+        <h4>{data.temperature.max}</h4>
+        <h5>{data.temperature.min}</h5>
+      </div>
       <p>icon</p>
     </div>
   );
