@@ -25,4 +25,20 @@ describe("Card", () => {
 
     expect(asFragment()).toMatchSnapshot();
   });
+
+  //   it("renders correct values for props", () => {
+  //     const { getByText } = render(
+  //       <Card
+  //         date={validProps.date}
+  //         description={validProps.description}
+  //         icon={validProps.icon}
+  //         temperature={validProps.temperature}
+  //       />
+  //     );
+  //   expect(getByText("Thu")).toHaveAttribute("class", "card--day");
+  //   expect(getByText("29 Aug")).toHaveAttribute("class", "card--date");
+  //   expect(getByText("Stub description")).toHaveAttribute("class", "card--description");
+  //   expect(getByText("22")).toHaveAttribute("class", "card--temp-max");
+  //   expect(getByText("14")).toHaveAttribute("class", "card--temp-min");
+  //   });
 });

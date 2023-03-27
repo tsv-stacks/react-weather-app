@@ -11,23 +11,33 @@ exports[`Card renders correctly 1`] = `
       <div
         class="card--daydate"
       >
-        <p>
+        <p
+          class="card--date"
+        >
           Monday
         </p>
-        <p>
+        <p
+          class="card--time"
+        >
           18/10
         </p>
       </div>
-      <p>
+      <p
+        class="card--description"
+      >
         Clear
       </p>
       <div
         class="card--temp"
       >
-        <h4>
+        <h4
+          class="card--temp-max"
+        >
           11
         </h4>
-        <h5>
+        <h5
+          class="card--temp-min"
+        >
           4
         </h5>
       </div>
@@ -41,23 +51,33 @@ exports[`Card renders correctly 1`] = `
       <div
         class="card--daydate"
       >
-        <p>
+        <p
+          class="card--date"
+        >
           Tuesday
         </p>
-        <p>
+        <p
+          class="card--time"
+        >
           15/07
         </p>
       </div>
-      <p>
+      <p
+        class="card--description"
+      >
         Stormy
       </p>
       <div
         class="card--temp"
       >
-        <h4>
+        <h4
+          class="card--temp-max"
+        >
           13
         </h4>
-        <h5>
+        <h5
+          class="card--temp-min"
+        >
           8
         </h5>
       </div>
@@ -71,23 +91,33 @@ exports[`Card renders correctly 1`] = `
       <div
         class="card--daydate"
       >
-        <p>
+        <p
+          class="card--date"
+        >
           Wednesday
         </p>
-        <p>
+        <p
+          class="card--time"
+        >
           11/04
         </p>
       </div>
-      <p>
+      <p
+        class="card--description"
+      >
         Heavy Snow
       </p>
       <div
         class="card--temp"
       >
-        <h4>
+        <h4
+          class="card--temp-max"
+        >
           1
         </h4>
-        <h5>
+        <h5
+          class="card--temp-min"
+        >
           -2
         </h5>
       </div>
@@ -101,23 +131,33 @@ exports[`Card renders correctly 1`] = `
       <div
         class="card--daydate"
       >
-        <p>
+        <p
+          class="card--date"
+        >
           Thursday
         </p>
-        <p>
+        <p
+          class="card--time"
+        >
           05/01
         </p>
       </div>
-      <p>
+      <p
+        class="card--description"
+      >
         Tornado
       </p>
       <div
         class="card--temp"
       >
-        <h4>
+        <h4
+          class="card--temp-max"
+        >
           20
         </h4>
-        <h5>
+        <h5
+          class="card--temp-min"
+        >
           4
         </h5>
       </div>
@@ -131,23 +171,33 @@ exports[`Card renders correctly 1`] = `
       <div
         class="card--daydate"
       >
-        <p>
+        <p
+          class="card--date"
+        >
           Friday
         </p>
-        <p>
+        <p
+          class="card--time"
+        >
           02/10
         </p>
       </div>
-      <p>
+      <p
+        class="card--description"
+      >
         Hazy
       </p>
       <div
         class="card--temp"
       >
-        <h4>
+        <h4
+          class="card--temp-max"
+        >
           25
         </h4>
-        <h5>
+        <h5
+          class="card--temp-min"
+        >
           18
         </h5>
       </div>

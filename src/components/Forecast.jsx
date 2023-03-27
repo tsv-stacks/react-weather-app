@@ -7,13 +7,13 @@ export default function Forecast(props) {
   return (
     <div className="card--forecast">
       <div className="card--daydate">
-        <p>{getDay(data.date)}</p>
-        <p>{dateFromTime(data.date)}</p>
+        <p className="card--date">{getDay(data.date)}</p>
+        <p className="card--time">{dateFromTime(data.date)}</p>
       </div>
-      <p>{data.description}</p>
+      <p className="card--description">{data.description}</p>
       <div className="card--temp">
-        <h4>{data.temperature.max}</h4>
-        <h5>{data.temperature.min}</h5>
+        <h4 className="card--temp-max">{data.temperature.max}</h4>
+        <h5 className="card--temp-min">{data.temperature.min}</h5>
       </div>
       <p>icon</p>
     </div>
