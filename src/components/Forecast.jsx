@@ -3,7 +3,6 @@ import { getDay, dateFromTime } from "./DataFunction";
 
 export default function Forecast(props) {
   const { data } = props;
-  console.log(data);
   return (
     <div className="card--forecast">
       <div className="card--daydate">
