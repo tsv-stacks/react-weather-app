@@ -1,5 +1,6 @@
 import React from "react";
 import { getDay, dateFromTime } from "./DataFunction";
+import WeatherIcon from "./WeatherIcon";
 
 export default function Forecast(props) {
   const { data } = props;
@@ -14,7 +15,7 @@ export default function Forecast(props) {
         <h4 className="card--temp-max">{data.temperature.max}</h4>
         <h5 className="card--temp-min">{data.temperature.min}</h5>
       </div>
-      <p>icon</p>
+      <WeatherIcon icon={data.icon} isLocation={false} />
     </div>
   );
 }

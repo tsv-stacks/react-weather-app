@@ -42,4 +42,50 @@ function longDateFromTime(time) {
     .replace(/(\d)(st|nd|rd|th)/, "$1<span>$2</span>");
 }
 
-export { kelvinToCelsius, timeConvert, getDay, dateFromTime, longDateFromTime };
+function getIconCode(id) {
+  const num = Number(id);
+
+  if (num >= 200 && num < 300) {
+    return "11d";
+  }
+  if (num >= 300 && num < 400) {
+    return "09d";
+  }
+  if (num >= 500 && num <= 510) {
+    return "10d";
+  }
+  if (num === 511) {
+    return "13d";
+  }
+  if (num >= 520 && num <= 531) {
+    return "09d";
+  }
+  if (num >= 600 && num < 700) {
+    return "13d";
+  }
+  if (num >= 700 && num < 800) {
+    return "50d";
+  }
+  if (num === 800) {
+    return "01d";
+  }
+  if (num === 801) {
+    return "02d";
+  }
+  if (num === 802) {
+    return "03d";
+  }
+  if (num === 803 || num === 804) {
+    return "04d";
+  }
+  return "Error: Code not Recognised";
+}
+
+export {
+  kelvinToCelsius,
+  timeConvert,
+  getDay,
+  dateFromTime,
+  longDateFromTime,
+  getIconCode,
+};

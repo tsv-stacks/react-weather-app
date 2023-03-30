@@ -1,5 +1,6 @@
 import React from "react";
 import { kelvinToCelsius, timeConvert, longDateFromTime } from "./DataFunction";
+import WeatherIcon from "./WeatherIcon";
 
 export default function LocationDetails({ location }) {
   return (
@@ -10,7 +11,7 @@ export default function LocationDetails({ location }) {
         <h3 className="location--longdate">{longDateFromTime(location.dt)}</h3>
         <h3 className="location--currentTime">{timeConvert(location.dt)}</h3>
         <h2>{kelvinToCelsius(location.main.temp)}°C</h2>
-        <p>icon</p>
+        <WeatherIcon icon={location.weather[0].icon} isLocation />
         <p>{location.weather[0].main}</p>
       </div>
       <div className="location--weather">
