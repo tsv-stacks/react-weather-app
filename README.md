@@ -42,3 +42,9 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 Photo by <a href="https://unsplash.com/@_dorian_?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dorian Mongel</a> on <a href="https://unsplash.com/photos/9zQkRU9IsDk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 Photo by <a href="https://unsplash.com/@chentianlu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Henry Chen</a> on <a href="https://unsplash.com/photos/x7clQSWhlfE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+## Future Features
+
+- [ ] Dark & Light Mode
+- [ ] Sunrise and Sunset Images
+- [ ] BG changes depending on time of day
