@@ -24,17 +24,17 @@ export default function LocationDetails({ location }) {
         <p>{location.weather[0].main}</p>
       </div>
       <div className="location--weather">
-        <h4 className="location--add">feels like</h4>
+        <h4 className="location--add">Feels like</h4>
         <h3 className="location--result">
           {kelvinToCelsius(location.main.feels_like)}°C
         </h3>
-        <h4 className="location--add">humidity</h4>
+        <h4 className="location--add">Humidity</h4>
         <h3 className="location--result">{location.main.humidity}%</h3>
-        <h4 className="location--add">sunrise</h4>
+        <h4 className="location--add">Sunrise</h4>
         <h3 className="location--result">
           {timeConvert(location.sys.sunrise)}
         </h3>
-        <h4 className="location--add">sunset</h4>
+        <h4 className="location--add">Sunset</h4>
         <h3 className="location--result">{timeConvert(location.sys.sunset)}</h3>
       </div>
     </main>

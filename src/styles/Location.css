@@ -7,6 +7,14 @@
   margin: 0 auto;
 }
 
+.location--result {
+  font-family: "Raleway", sans-serif;
+}
+
+.location--add {
+  font-family: "Lato", sans-serif;
+}
+
 .location--details,
 .location--weather {
   width: 48%;

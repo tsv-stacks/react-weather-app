@@ -48,3 +48,4 @@ Photo by <a href="https://unsplash.com/@chentianlu?utm_source=unsplash&utm_mediu
 - [ ] Dark & Light Mode
 - [ ] Sunrise and Sunset Images
 - [ ] BG changes depending on time of day
+- [ ] Location component icons
