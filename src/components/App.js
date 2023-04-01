@@ -3,13 +3,14 @@ import "../styles/App.css";
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import "../styles/Location.css";
-import openweatherAPI from "../data/openweather.json";
 import ForecastSummary from "./ForecastSummary";
 import "../styles/Card.css";
 import Location from "./Location";
+import SearchForm from "./SearchForm";
+import "../styles/SearchForm.css";
 
 function App() {
-  const [location, setLocation] = useState(openweatherAPI);
+  const [location, setLocation] = useState(null);
 
   useEffect(() => {
     const API_KEY = process.env.REACT_APP_API_KEY;
@@ -26,8 +27,15 @@ function App() {
 
   return (
     <div className="App">
-      <Location location={location} />
-      <ForecastSummary />
+      {location ? (
+        <>
+          <Location location={location} />
+          <SearchForm />
+          <ForecastSummary />
+        </>
+      ) : (
+        <p>Loading...</p>
+      )}
     </div>
   );
 }

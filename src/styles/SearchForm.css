@@ -1,0 +1,9 @@
+.search--form input[type="text"] {
+  max-width: 400px;
+  width: 70%;
+}
+
+.search--form {
+  display: flex;
+  justify-content: center;
+}
