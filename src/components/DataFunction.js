@@ -20,7 +20,7 @@ function getDay(unix) {
 }
 
 function dateFromTime(time) {
-  const date = new Date(time * 1000);
+  const date = new Date(time);
   const day = date.getDate();
   const month = date.getMonth() + 1;
   const formattedDate = `${String(day).padStart(2, "0")}/${String(
