@@ -7,23 +7,44 @@
   margin: 0 auto;
 }
 
-.location--result {
+.location--result,
+.num {
   font-family: "Raleway", sans-serif;
+  margin-top: 0;
 }
 
-.location--add {
+.location--add,
+.text {
   font-family: "Lato", sans-serif;
+  margin-bottom: 2px;
+  font-weight: normal;
+  font-size: 15px;
 }
 
 .location--details,
 .location--weather {
   width: 48%;
   padding: 1rem;
+  max-width: 200px;
   box-sizing: border-box;
 }
 
 .location--weather {
   text-align: right;
+}
+
+.location--longdate,
+.location--name {
+  margin-bottom: 0;
+}
+
+.location--currentTime,
+.location--country {
+  margin-top: 2px;
+}
+
+.location--weather-icon {
+  display: block;
 }
 
 @media only screen and (max-width: 600px) {

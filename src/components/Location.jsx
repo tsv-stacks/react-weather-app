@@ -15,13 +15,15 @@ export default function LocationDetails({ location }) {
   return (
     <main className="location">
       <div className="location--details">
-        <h1 className="location--name">{location.name}</h1>
-        <h3 className="location--country">{location.sys.country}</h3>
-        <h3 className="location--longdate">{longDateFromTime(location.dt)}</h3>
-        <h3 className="location--currentTime">{time.toLocaleTimeString()}</h3>
-        <h2>{kelvinToCelsius(location.main.temp)}°C</h2>
+        <h1 className="location--name text">{location.name}</h1>
+        <h3 className="location--country text">{location.sys.country}</h3>
+        <p className="location--longdate text">
+          {longDateFromTime(location.dt)}
+        </p>
+        <p className="location--currentTime num">{time.toLocaleTimeString()}</p>
+        <h2 className="num">{kelvinToCelsius(location.main.temp)}°C</h2>
         <WeatherIcon icon={location.weather[0].icon} isLocation />
-        <p>{location.weather[0].main}</p>
+        <h3 className="location--descrip text">{location.weather[0].main}</h3>
       </div>
       <div className="location--weather">
         <h4 className="location--add">Feels like</h4>
