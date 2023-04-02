@@ -7,24 +7,39 @@
   margin: 0 auto;
 }
 
-.location--result,
-.num {
-  font-family: "Raleway", sans-serif;
-  margin-top: 0;
+.flex {
+  display: flex;
 }
 
-.location--add,
+.location--contain {
+  margin-bottom: 10px;
+  justify-content: space-between;
+  max-width: 150px;
+}
+
+.num {
+  font-family: "Raleway", sans-serif;
+}
+
 .text {
   font-family: "Lato", sans-serif;
-  margin-bottom: 2px;
+}
+
+.location--result {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.location--add {
   font-weight: normal;
-  font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 2px;
 }
 
 .location--details,
 .location--weather {
   width: 48%;
-  padding: 1rem;
+  padding: 0 1rem;
   max-width: 200px;
   box-sizing: border-box;
 }
@@ -41,10 +56,20 @@
 .location--currentTime,
 .location--country {
   margin-top: 2px;
+  font-weight: normal;
 }
 
 .location--weather-icon {
   display: block;
+  width: 75px;
+}
+
+.location--temp {
+  margin-bottom: 2px;
+}
+
+.location--descrip {
+  margin-top: 2px;
 }
 
 @media only screen and (max-width: 600px) {
