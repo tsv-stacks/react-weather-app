@@ -1,9 +1,20 @@
 :root {
-  --light-blue: #add8e6ff;
+  --light-blue: rgb(173, 216, 230);
   --tekhelet: #41337aff;
-  --air-superiority-blue: #6ea4bfff;
+  --air-superiority-blue: rgb(110, 164, 191);
   --mint-green: #c2efebff;
   --honeydew: #ecfee8ff;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+.location {
+  width: 100%;
 }
 
 * {
