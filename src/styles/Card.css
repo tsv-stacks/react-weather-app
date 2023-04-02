@@ -2,15 +2,47 @@
   width: 20vw;
   max-width: 300px;
   text-align: center;
+  background-color: rgba(110, 164, 191, 0.2);
+  padding: 1rem 0.5rem;
+  /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000; */
 }
 
-.cards * {
+.card--forecast p {
+  font-weight: bold;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.card--forecast:hover {
+  background-color: rgba(110, 164, 191, 0.6);
+}
+
+/* .cards * {
   border: 1px red solid;
+} */
+.card--description {
+  font-weight: bold;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
-.card--temp * {
+.card--temp *,
+.card--description {
   padding: 0;
   margin: 0;
+}
+
+.card--date {
+  margin-bottom: 2px;
+  margin-top: 0;
+}
+
+.card--time {
+  margin-top: 0px;
+}
+.card--temp-min {
+  margin-top: 2px;
 }
 
 .cards {
@@ -24,12 +56,38 @@
     display: flex;
     width: 100%;
     max-width: 100%;
-    justify-content: space-between;
-    max-height: 80px;
+    margin-top: 5px;
+    height: 50px;
+    max-height: 55px;
+    padding: 0 0.5rem;
   }
   .cards {
     margin: 0 auto;
     width: 90vw;
     display: block;
+  }
+
+  .card--temp-max {
+    font-size: 20px;
+  }
+
+  .card--time {
+    margin-bottom: 2px;
+  }
+
+  .card--daydate {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .card--temp {
+    width: 20%;
+  }
+
+  .card--description {
+    margin: auto;
+    width: 25%;
   }
 }
