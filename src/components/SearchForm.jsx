@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function SearchForm() {
+export default function SearchForm({ onSearch }) {
   const [searchText, setSearchText] = React.useState("");
 
   const handleText = (event) => {
@@ -9,6 +9,7 @@ export default function SearchForm() {
 
   const handleSearch = () => {
     console.log(`Searching For ${searchText}`);
+    onSearch(searchText);
   };
 
   return (
