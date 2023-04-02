@@ -4,19 +4,23 @@ import axios from "axios";
 import Forecast from "./Forecast";
 import { getDay } from "./DataFunction";
 
-export default function Card() {
+export default function Card({ userInput }) {
   const [forecastData, setForecastData] = useState(null);
 
   useEffect(() => {
     axios
-      .get(`https://cmd-shift-weather-app.onrender.com/forecast?city=London`)
+      .get(
+        `https://cmd-shift-weather-app.onrender.com/forecast?city=${
+          userInput || "London"
+        }`
+      )
       .then((response) => {
         setForecastData(response.data);
       })
       .catch((err) => {
         console.log(err);
       });
-  }, []);
+  }, [userInput]);
 
   return (
     <section className="cards">

@@ -11,10 +11,15 @@ import "../styles/SearchForm.css";
 
 function App() {
   const [location, setLocation] = useState(null);
+  const [userInput, setUserInput] = useState("London");
+
+  const handleSearch = (input) => {
+    setUserInput(input);
+  };
 
   useEffect(() => {
     const API_KEY = process.env.REACT_APP_API_KEY;
-    const URL = `https://api.openweathermap.org/data/2.5/weather?q=London&APPID=${API_KEY}`;
+    const URL = `https://api.openweathermap.org/data/2.5/weather?q=${userInput}&APPID=${API_KEY}`;
     axios
       .get(URL)
       .then((response) => {
@@ -23,15 +28,15 @@ function App() {
       .catch((err) => {
         console.log(err);
       });
-  }, []);
+  }, [userInput]);
 
   return (
     <div className="App">
       {location ? (
         <>
           <Location location={location} />
-          <SearchForm />
-          <ForecastSummary />
+          <SearchForm onSearch={handleSearch} />
+          <ForecastSummary userInput={userInput} />
         </>
       ) : (
         <p>Loading...</p>
