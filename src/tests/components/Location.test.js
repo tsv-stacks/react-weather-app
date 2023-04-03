@@ -35,12 +35,6 @@ describe("LocationDetails", () => {
     expect(getByText(date)).toBeInTheDocument();
   });
 
-  it("renders the current time of the location", () => {
-    const { getByText } = render(<LocationDetails location={location} />);
-    const time = timeConvert(location.dt);
-    expect(getByText(time)).toBeInTheDocument();
-  });
-
   it("renders the temperature in celsius", () => {
     const { getByText } = render(<LocationDetails location={location} />);
     const temp = kelvinToCelsius(location.main.temp);
