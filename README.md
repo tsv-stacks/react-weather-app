@@ -19,6 +19,7 @@ Currently you can get the current location weather details for any city in the w
 - [ ] Switch completely to openWeather API
 - [ ] Switch Production branch from main -> Production
 - [ ] Remove ESlint console no rule
+- [ ] Delete App.test
 
 ## Development
 
