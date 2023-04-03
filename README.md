@@ -8,7 +8,7 @@ This was one of the first apps I built using React and helped me learn about pro
 
 ### Search for a City
 
-Currently you can get the current location weather details for any city in the world, however the forecast will only work for cities in the UK. This fun little ~~bug~~ feature is to the current location using the OpenWeather API to make requests whereas the forecast makes an API request to a custom backend server.
+Currently you can get the current location weather details for any city in the world, however the forecast will only work for cities in the UK. This fun little ~~bug~~ feature is due to the current location using the OpenWeather API to make requests whereas the forecast makes an API request to a custom backend server.
 
 ### Future Features
 
@@ -33,6 +33,16 @@ git clone https://github.com/tsv-stacks/react-weather-app
 cd react-weather-app
 npm install
 ```
+
+To use this app, you will need to create your own `.env` file with your OpenWeather API key. You can get your own API key by signing up for a free account on the [OpenWeather website](https://openweathermap.org/api).
+
+After signing up, create a `.env` file in the root of the project and add the following line, replacing {YOUR_API_KEY} with your actual API key:
+
+```
+REACT_APP_API_KEY={YOUR_API_KEY}
+```
+
+Make sure to restart the development server after making changes to the `.env` file.
 
 ## Available Scripts
 
