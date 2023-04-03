@@ -33,12 +33,18 @@ describe("getDay", () => {
 });
 
 describe("dateFromTime", () => {
-  test('converts 1616371624 to "22/03"', () => {
-    expect(dateFromTime(1616371624)).toBe("22/03");
+  test("returns the correct date for timestamp 1616427400000", () => {
+    const timestamp = 1616427400000;
+    const expectedDate = "22/03";
+    const actualDate = dateFromTime(timestamp);
+    expect(actualDate).toBe(expectedDate);
   });
 
-  test('converts 1616457983 to "23/03"', () => {
-    expect(dateFromTime(1616457983)).toBe("23/03");
+  test("returns the correct date for timestamp 1616513800000", () => {
+    const timestamp = 1616513800000;
+    const expectedDate = "23/03";
+    const actualDate = dateFromTime(timestamp);
+    expect(actualDate).toBe(expectedDate);
   });
 });
 
