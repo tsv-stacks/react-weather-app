@@ -1,5 +1,4 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import "../styles/App.css";
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import "../styles/Location.css";
