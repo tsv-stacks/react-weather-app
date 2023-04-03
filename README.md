@@ -1,6 +1,38 @@
-# Getting Started with Create React App
+# Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a weather app that allows users to search for the current weather and forecast of a city.
+
+This was one of the first apps I built using React and helped me learn about props, state, snapshot & component testing.
+
+## Features
+
+### Search for a City
+
+Currently you can get the current location weather details for any city in the world, however the forecast will only work for cities in the UK. This fun little ~~bug~~ feature is to the current location using the OpenWeather API to make requests whereas the forecast makes an API request to a custom backend server.
+
+### Future Features
+
+- [ ] Dark & Light Mode
+- [ ] Sunrise and Sunset Images
+- [ ] BG changes depending on time of day
+- [x] Location component icons
+- [ ] Switch completely to openWeather API
+
+## Development
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and the [OpenWeather API](https://openweathermap.org/api).
+
+The app also uses the axios library to make API requests to the OpenWeather API and the moment library to format the date and time.
+
+## Installation
+
+To install the app, clone the repository to your local machine and run npm install to install the necessary dependencies.
+
+```bash
+git clone https://github.com/tsv-stacks/react-weather-app
+cd react-weather-app
+npm install
+```
 
 ## Available Scripts
 
@@ -19,6 +51,8 @@ You may also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+The application uses [Jest](https://jestjs.io/) as its testing framework.
+
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
@@ -29,23 +63,8 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Credit
 
 Photo by <a href="https://unsplash.com/@_dorian_?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dorian Mongel</a> on <a href="https://unsplash.com/photos/9zQkRU9IsDk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 Photo by <a href="https://unsplash.com/@chentianlu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Henry Chen</a> on <a href="https://unsplash.com/photos/x7clQSWhlfE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
-## Future Features
-
-- [ ] Dark & Light Mode
-- [ ] Sunrise and Sunset Images
-- [ ] BG changes depending on time of day
-- [ ] Location component icons
