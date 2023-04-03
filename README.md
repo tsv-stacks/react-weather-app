@@ -17,6 +17,8 @@ Currently you can get the current location weather details for any city in the w
 - [ ] BG changes depending on time of day
 - [x] Location component icons
 - [ ] Switch completely to openWeather API
+- [ ] Switch Production branch from main -> Production
+- [ ] Remove ESlint console no rule
 
 ## Development
 
