@@ -10,6 +10,7 @@ export default function WeatherIcon({ icon, isLocation }) {
         className={`${nameClass}--weather-icon`}
         src={`https://openweathermap.org/img/w/${iconCheck}.png`}
         alt="Weather Icon"
+        data-testid="forecast-icon"
       />
     </div>
   );
