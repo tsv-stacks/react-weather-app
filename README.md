@@ -66,16 +66,6 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 The application uses [Jest](https://jestjs.io/) as its testing framework.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
 ## Credit
 
 Photo by <a href="https://unsplash.com/@_dorian_?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dorian Mongel</a> on <a href="https://unsplash.com/photos/9zQkRU9IsDk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>

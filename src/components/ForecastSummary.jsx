@@ -24,13 +24,10 @@ export default function Card({ userInput }) {
         if (error.response) {
           if (error.response.status === 500) {
             setErrorMessage("Oops, server error, try again later.");
-            console.error("Server error", error);
           } else if (error.response.status === 404) {
             setErrorMessage("Oops, city not found.");
-            console.error("City not found", error);
           } else {
             setErrorMessage("Oops, something went wrong.");
-            console.error("Error", error);
           }
 
           timeoutId = setTimeout(() => {
