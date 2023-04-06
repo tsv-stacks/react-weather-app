@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchForm renders the input field and button 1`] = `
+Object {
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+}
+`;

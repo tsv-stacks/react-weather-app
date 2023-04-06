@@ -8,7 +8,6 @@ export default function SearchForm({ onSearch }) {
   };
 
   const handleSearch = () => {
-    console.log(`Searching For ${searchText}`);
     onSearch(searchText);
   };
 

@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Forecast renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="card--forecast"
+  >
+    <div
+      class="card--daydate"
+    >
+      <p
+        class="card--date"
+      >
+        Monday
+      </p>
+      <p
+        class="card--time"
+      >
+        19/01
+      </p>
+    </div>
+    <div
+      class="card--temp"
+    >
+      <h2
+        class="card--temp-max"
+      >
+        10°C
+      </h2>
+      <h4
+        class="card--temp-min"
+      >
+        5°C
+      </h4>
+    </div>
+    <div
+      class="forecast-summary__icon"
+      data-testid="forecast-icon"
+    >
+      <img
+        alt="Weather Icon"
+        class="card--weather-icon"
+        data-testid="forecast-icon"
+        src="https://openweathermap.org/img/w/Error: Code not Recognised.png"
+      />
+    </div>
+    <p
+      class="card--description"
+    >
+      sunny
+    </p>
+  </div>
+</DocumentFragment>
+`;
