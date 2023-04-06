@@ -18,14 +18,13 @@ Currently you can get the current location weather details for any city in the w
 - [x] Location component icons
 - [ ] Switch completely to openWeather API
 - [ ] Switch Production branch from main -> Production
-- [ ] Remove ESlint console no rule
-- [ ] Delete App.test
+- [x] Remove ESlint console no rule
 
 ## Development
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and the [OpenWeather API](https://openweathermap.org/api).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and the .
 
-The app also uses the axios library to make API requests to the OpenWeather API and the moment library to format the date and time.
+The app also uses the axios library to make API requests to the [OpenWeather API](https://openweathermap.org/api) and the moment library to format the date and time.
 
 ## Installation
 

@@ -24,13 +24,10 @@ function App() {
       .then((response) => {
         setLocation(response.data);
       })
-      .catch(
-        (error) => {
-          return error;
-        },
-        [userInput]
-      );
-  });
+      .catch((error) => {
+        return error;
+      });
+  }, [userInput]);
 
   return (
     <div className="App">
