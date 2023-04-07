@@ -1,5 +1,7 @@
 # Weather App
 
+### Live Page: https://weather-app-react-commandshift.netlify.app/
+
 This is a weather app that allows users to search for the current weather and forecast of a city.
 
 This was one of the first apps I built using React and helped me learn about props, state, snapshot & component testing.
