@@ -24,7 +24,7 @@ Currently you can get the current location weather details for any city in the w
 
 ## Development
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and the .
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 The app also uses the axios library to make API requests to the [OpenWeather API](https://openweathermap.org/api) and the moment library to format the date and time.
 
